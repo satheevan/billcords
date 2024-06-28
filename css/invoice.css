@@ -1,0 +1,45 @@
+#invoicePrint {
+  display: none;
+}
+
+@media print {
+  #mainWrapper {
+    display: none;
+  }
+  #invoicePrint {
+    display: block;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    color: #1943ff;
+    margin-top: 35%;
+  }
+.partydetails{
+    display: flex;
+    justify-content: space-between;
+}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+  }
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .total {
+    font-weight: bold;
+  }
+  .total-container{
+    margin-top: 5%;
+  }
+}

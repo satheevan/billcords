@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Slip</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/invoice.css" />
+  </head>
+  <body>
+    <div class="invoice-container">
+      <h2>Invoice Slip</h2>
+      <p><strong>CustomerName :</strong>${customerName}</p>
+      <p><strong>Date :</strong>${invoiceDate}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>ItemTotal</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          ${items.map((item)=>(`
+          <tr>
+            <td>${item.description}</td>
+            <td>${item.quantity}</td>
+            <td>${item.price}</td>
+            <td>${item.itemValue}</td>
+          </tr>
+          ` )).join("")}
+        </tbody>
+      </table>
+      <p class="total">Total Amount:${totalAmount}</p>
+      <p class="total">Other charges:${otherCharges}</p>
+      <p class="total">Discount:${discount}</p>
+      <p class="total">Invoice Amount:${invoiceAmount}</p>
+    </div>
+  </body>
+</html>

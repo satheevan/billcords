@@ -1,0 +1,17 @@
+.table-view{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    max-height:330px;
+    overflow-y: auto;
+
+}
+table[title], th{
+
+}
+th,td{
+    text-align: center;
+}
+td > *{
+    border: none;
+}

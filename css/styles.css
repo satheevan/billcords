@@ -1,0 +1,39 @@
+:root{
+    --clr-test:#00ff00;
+    --clr-60:#555555;
+    --clr-30:#ffffff;
+    --clr-10:#8989ff;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    background-color:var(--clr-60) ;
+}
+.main{
+
+    /* background-color: red; */
+}
+.content-wrapper{
+    background-color:var(--clr-30) ;
+}
+h2[title=blue-heading]{
+    color: var(--clr-10);
+}
+
+/* other class  */
+.bold{
+    font-weight: bold;
+    font-size: 18px;
+}
+.summary-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: end;
+}
+.m-2{
+    margin: 2rem;
+}
